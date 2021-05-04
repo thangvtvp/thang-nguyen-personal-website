@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <a href="index.html" class="active1">Go back home Page</a>
+        <link rel="stylesheet" type="text/css" href="thumbnail.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Photography Portfolio</h1>
+            <p>Instagram: Pinky_Unicorn226</p>
+        </header>
+
+        <img id="mainImage" style="border: 3px solid grey;" src="9.jpg" height="600px" width="640x" class="center" />
+        <br />
+        <div id="divId" onclick="changeImageOnClick(event)">
+            <img class="imgStyle" src="11.jpg" />
+            <img class="imgStyle" src="1b.jpg" />
+            <img class="imgStyle" src="2.jpg" />
+            <img class="imgStyle" src="3.jpg" />
+            <img class="imgStyle" src="4.jpg" />
+            <img class="imgStyle" src="6.jpg" />
+        </div>
+        <script type="text/javascript">
+            var images = document.getElementById("divId").getElementsByTagName("img");
+
+            for (var i = 0; i < images.length; i++) {
+                images[i].onmouseover = function () {
+                    this.style.cursor = "hand";
+                    this.style.borderColor = "red";
+                };
+                images[i].onmouseout = function () {
+                    this.style.cursor = "pointer";
+                    this.style.borderColor = "grey";
+                };
+            }
+
+            function changeImageOnClick(event) {
+                event = event || window.event;
+                var targetElement = event.target || event.srcElement;
+
+                if (targetElement.tagName == "IMG") {
+                    mainImage.src = targetElement.getAttribute("src");
+                }
+            }
+        </script>
+    </body>
+</html>

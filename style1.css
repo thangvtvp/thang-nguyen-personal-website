@@ -1,0 +1,148 @@
+body {
+    height: 100%;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 41, 255, 0.02) 0%,
+        rgba(0, 41, 255, 0) 100%
+    );
+}
+label,
+input,
+textarea {
+    display: block;
+    width: 100%;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 0.3em;
+}
+span {
+    font-weight: 700;
+    color: #102a43;
+    line-height: 35px;
+    line-height: 2.5rem;
+    font-size: 12px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+input[type="submit"] {
+    background:#050005;
+    ;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-top: 1.3em;
+}
+
+.container {
+    width: 460px;
+    margin: 5em auto;
+}
+form {
+    background-color: #ffffff;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+
+input, textarea {
+    width: 100%;
+    padding: 9px 20px;
+    border: 1px solid #e1e2eb;
+    background-color: #fff;
+    color: #102a43;
+    caret-color: #829ab1;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-size: 1rem;
+    line-height: 29px;
+    line-height: 2rem;
+    box-shadow: inset 0 2px 4px 0 rgba(206, 209, 224, 0.2);
+    border-radius: 3px;
+    line-height: 29px;
+    line-height: 2rem;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    padding: 0px 5% ;
+}
+nav ul{
+    display: flex;
+}
+nav ul li a{
+    margin: 30px;
+    font-family: myriad pro regular;
+    color:#505050;
+    font-size:15px;
+    font-weight: 700;
+}
+.name{
+    font-family: Sacramento;
+    color:#000000;
+    font-size: 30px;
+}
+.active{
+    font-weight: bold;
+    color:#2d2a2a;
+}
+  body{
+    background-color:#f6f5f5 ;
+    margin: 0px;
+    padding: 0px;
+  }
+  ul{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+  }
+  section{
+    width: 100%;
+    height:95vh;
+    background-image: url("bg.png");
+    background-repeat: none-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    padding: 0px 5% ;
+  }
+  nav ul{
+    display: flex;
+  }
+  nav ul li a{
+    margin: 30px;
+    font-family: myriad pro regular;
+    color:#505050;
+    font-size:15px;
+    font-weight: 700;
+  }
+  .name{
+    font-family: Sacramento;
+    color:#000000;
+    font-size: 30px;
+  }
+  

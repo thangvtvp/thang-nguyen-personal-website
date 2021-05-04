@@ -1,0 +1,156 @@
+
+* { box-sizing: border-box; }
+
+
+
+body {
+  background: #dfe4ea;
+  color: #2d3436;
+  font-family: 'PT Serif';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  
+}
+
+body,
+.content__profile,
+.profile,
+.content__bio {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin: 0;
+}
+
+.container {
+  background: #fafafa;
+  box-shadow:0 0 50px 0 rgba(30,20,80,.08),0 0 50px 0 rgba(30,20,80,.08);
+  height: 80%;
+  min-height: 0px;
+  min-width: 900px;  
+  width: 92%;
+}
+
+.container__content {
+  align-items: stretch;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-items: stretch;
+  height: 100%;
+}
+
+.content__profile {
+  background: #003563;
+  color: white;
+}
+
+.profile {
+  text-align: center;
+}
+
+.content__profile img {
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  height: 14rem;
+  padding: .8rem;
+  width: 14rem;
+}
+
+.content__profile h1 {
+  font: 3rem Sacramento;
+  margin-top: .5em;
+} 
+
+.content__border {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1rem;
+  margin-top: -2rem;
+  width: 50%;
+}
+
+.content__profile p {
+  font-size: 1.1rem;
+  margin: .25rem; 
+}
+
+.content__bio {
+  background: #fafafa;
+  padding: 3em;
+  text-align: center;
+}
+
+.content__bio hr {
+  width: 50%;
+}
+
+@media only screen and (max-width: 1300px) {
+  
+  .container {
+    margin-top: -200px;
+  }
+  
+  .container__content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+  }
+  
+  .content__profile {
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 1em;
+  }
+  
+  .content__profile img {
+    height: 12rem;
+    margin: 1rem;
+    width: 12rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    margin-top: -350px;
+  }
+  
+  .content__profile img {
+    margin-bottom: -1rem;
+  }
+  
+  .content__profile p {
+    font-size: 1rem;
+    margin: .1rem; 
+}
+  .content__bio {
+  background: #fafafa;
+  padding: 2em;
+  text-align: center;
+}
+  .content__bio h2 {
+    font-size: 1.2rem;
+  }
+  
+  .content__bio p {
+    font-size: .9rem;
+  }
+}
+
+.name{
+  font-family: Sacramento;
+  color:#000000;
+  font-size: 30px;
+}
+.active{
+  font-weight: bold;
+  color:#2d2a2a;
+}
+nav{
+  display:none;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: #FFFFFF;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+  padding: 0px 5% ;
+}
